@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <title>StackBlocks - Responsive Dark Theme</title>
+  <!-- IMPORTANT: Add viewport meta so mobile devices use actual width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <style>
     /* -------------------------------------------------------
        1) Import Font
@@ -63,7 +66,7 @@
       }
 
       /* Hide both #sidebar and #mainContent by default.
-         We’ll show them conditionally via body classes */
+         We'll show them conditionally via body classes */
       #sidebar,
       #mainContent {
         display: none;
@@ -874,7 +877,7 @@
     focusedSubBlock = null;
   });
 
-  deleteBlockBtnElem.addEventListener("click", () => {
+  deleteBlockBtn.addEventListener("click", () => {
     if (!focusedSubBlock) return;
     const mbIndex = userData.activeMegaIndex;
     let subBlocks = userData.megaBlocks[mbIndex].subBlocks;
