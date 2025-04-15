@@ -642,7 +642,7 @@
   const focusBlockPriority = document.getElementById("focusBlockPriority");
   const focusBlockTitle = document.getElementById("focusBlockTitle");
   const focusBlockDescription = document.getElementById("focusBlockDescription");
-  const deleteBlockBtnElem = document.getElementById("deleteBlockBtn");
+  const deleteBlockBtn = document.getElementById("deleteBlockBtn");
   let focusedSubBlock = null;
 
   function saveUserData() {
@@ -903,8 +903,9 @@
 
   generateAnalysisBtn.addEventListener("click", generateAnalysis);
 
-  // For demonstration only! Key is exposed client-side.
-  const OPENAI_API_KEY = "sk-proj-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+  // ***** NEW KEY HERE *****
+  // For demonstration only! Key is exposed client-side
+  const OPENAI_API_KEY = "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";
 
   async function generateAnalysis() {
     analysisOutput.value = "Generating analysis... please wait.";
